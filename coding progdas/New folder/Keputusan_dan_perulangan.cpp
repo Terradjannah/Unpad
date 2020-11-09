@@ -47,39 +47,85 @@ main()
    }
    */
 	
-	/*
+	
 	int y, r;
 	
-	for (y=0; y<10; y=y+2){
+	for (y=0; y<10; y++){
 		r = rand() % 10;
-		printf("aku mau makan %d %d\n", r, y);
-		++y;
+		printf("\naku mau makan %d %d\n", r, y);
+		if(y==5){
+		continue;}
+		printf("\nAku dan Kamu");
 	}
-		
-	int y, r;
+		/*
 		for (y=0; y<10; --y){
 		MessageBox(0,"gabisa di tutup yaa","kesel yaaaa ",1);
+		continue;
 		}*/
 	
 	
-	int o = 0;
+	
 	//minimum data masuk 0 karena di cek dulu baru data masuk
-	while (o<=4){
-		printf("%d\n", o);
-		++o;
-	}
+	
 	
 	printf("\n\n\n");
 	
 	int q = 0;
 	
-	//minimum data masuk 1 karena data masuk dulu baru di kondisikan
+	/*//minimum data masuk 1 karena data masuk dulu baru di kondisikan
 	do{
 		printf("%d\n", q);
 		++q;
 	} 
 	while (q<=4);
 	
+	while (q<=4){
+		printf("%d\n", q);
+		++q;
+	}*/
+
+
+
+	char nilai;
+ 
+  printf("Input Nilai Anda (A - E): ");
+  scanf("%c",&nilai);
+ 
+  switch (nilai) {
+    case 'A':
+      printf("Pertahankan! \n");
+      break;
+    case 'B':
+      printf("Harus lebih baik lagi \n");
+      break;
+    case 'C':
+      printf("Perbanyak belajar \n");
+      break;
+    case 'D':
+      printf("Jangan keseringan main \n");
+      break;
+    case 'E':
+      printf("Kebanyakan bolos... \n");
+      break;
+	case 'a':
+      printf("Pertahankan! \n");
+      break;
+    case 'b':
+      printf("Harus lebih baik lagi \n");
+      break;
+    case 'c':
+      printf("Perbanyak belajar \n");
+      break;
+    case 'd':
+      printf("Jangan keseringan main \n");
+      break;
+    case 'e':
+      printf("Kebanyakan bolos... \n");
+      break;
+    default:
+      printf("Maaf, format nilai tidak sesuai \n");
+  }
+ 
 	getch();
 	return 0;
 }
